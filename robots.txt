@@ -1,0 +1,20 @@
+# Taiseer Transactions Services — robots.txt
+# Site is fully open to all search engines and social crawlers.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome social-preview crawlers (WhatsApp, Facebook, Twitter/X, LinkedIn)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+Sitemap: https://taiseertyping.com/sitemap.xml

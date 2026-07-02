@@ -1,0 +1,25 @@
+{
+  "name": "Taiseer Transactions Services",
+  "short_name": "Taiseer",
+  "description": "Typing & documentation center in Mohamed Bin Zayed City, Abu Dhabi — Emirates ID, visa, attestation, translation & business setup.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b2a6b",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "574x435",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
