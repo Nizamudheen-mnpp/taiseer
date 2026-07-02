@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" role="img" aria-label="Taiseer Typing logo">
+  <defs>
+    <linearGradient id="redSwoosh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e23b3b"/>
+      <stop offset="55%" stop-color="#c8202f"/>
+      <stop offset="100%" stop-color="#8f1320"/>
+    </linearGradient>
+    <linearGradient id="blueMark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26348a"/>
+      <stop offset="100%" stop-color="#1b2a6b"/>
+    </linearGradient>
+  </defs>
+  <!-- Blue arrow / T mark -->
+  <path fill="url(#blueMark)" d="M150 55 L182 55 L182 120 Q210 128 205 175 L182 168 L182 250 Q170 268 150 250 L150 120 Z"/>
+  <!-- Red swoosh -->
+  <path fill="url(#redSwoosh)" d="M105 60 Q150 48 195 78 Q230 100 218 132 Q210 110 178 105 Q140 100 120 118 Q100 128 95 118 Q92 108 105 60 Z" transform="rotate(-4 160 100)"/>
+  <path fill="url(#redSwoosh)" d="M92 132 Q140 95 200 118 Q235 132 218 150 L210 138 Q175 122 138 138 Q108 150 92 150 Z"/>
+  <!-- TAI letters -->
+  <text x="166" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">T</text>
+  <text x="166" y="125" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="166" y="150" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">I</text>
+  <!-- SEER letters -->
+  <text x="166" y="190" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="166" y="213" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+  <text x="166" y="236" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+  <text x="166" y="259" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+</svg>
