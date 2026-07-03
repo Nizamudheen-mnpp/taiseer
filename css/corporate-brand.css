@@ -399,3 +399,19 @@ a.contact__row:hover { transform: translateX(5px); background: rgba(255,255,255,
 .tmember:hover .tmember__photo { transform: translateY(-6px); box-shadow: 0 0 0 4px #fff, var(--shadow); }
 .tmember:hover .tmember__photo::after { box-shadow: inset 0 0 0 3px var(--teal); }
 .tmember__name { font-family: var(--head); font-weight: 700; color: var(--navy); font-size: 1.02rem; letter-spacing: -.01em; }
+
+/* ===== Dedicated services page ===== */
+.pagehero { position: relative; background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-600) 130%); color: #fff; overflow: hidden; padding: clamp(48px,7vw,84px) 0 clamp(56px,8vw,92px); }
+.pagehero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 120% at 88% -10%, rgba(255,255,255,.12), transparent 60%); pointer-events: none; }
+.pagehero__inner { position: relative; max-width: 760px; }
+.pagehero .eyebrow { color: #fff; }
+.pagehero__crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-family: var(--head); font-weight: 600; font-size: .82rem; color: rgba(255,255,255,.72); margin-bottom: 20px; }
+.pagehero__crumbs a { color: rgba(255,255,255,.72); transition: color .25s; }
+.pagehero__crumbs a:hover { color: #fff; }
+.pagehero__crumbs span { opacity: .55; }
+.pagehero__crumbs strong { color: #fff; font-weight: 600; }
+.pagehero__title { font-size: clamp(2rem,4.6vw,3.1rem); color: #fff; margin-bottom: 16px; }
+.pagehero__title span { color: var(--teal); }
+.pagehero__text { color: rgba(255,255,255,.82); font-size: 1.05rem; max-width: 640px; }
+.pagehero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.services-page .services__grid { margin-top: 4px; }

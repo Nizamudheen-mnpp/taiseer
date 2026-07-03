@@ -51,7 +51,11 @@
 
   var grid = document.getElementById('servicesGrid');
   if (grid) {
-    grid.innerHTML = SERVICES.map(function (s, i) {
+    // Homepage grids set data-limit to show a featured subset; the dedicated
+    // services page omits it and lists every service.
+    var limit = parseInt(grid.getAttribute('data-limit'), 10);
+    var list = (limit > 0 && limit < SERVICES.length) ? SERVICES.slice(0, limit) : SERVICES;
+    grid.innerHTML = list.map(function (s, i) {
       return '<article class="scard reveal" data-delay="' + (i % 4) + '">' +
         '<div class="scard__icon">' + (ICON[s.icon] || '') + '</div>' +
         '<h4>' + s.title + '</h4><p>' + s.desc + '</p>' +

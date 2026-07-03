@@ -24,15 +24,47 @@
     { icon: '🏛️', title: 'Court & Tasheel', desc: 'Abu Dhabi court services and Tasheel transactions.' }
   ];
 
+  var VISIBLE_SERVICES = 8;
   var grid = document.getElementById('servicesGrid');
   if (grid) {
-    grid.innerHTML = SERVICES.map(function (s) {
-      return '<article class="scard reveal">' +
+    grid.innerHTML = SERVICES.map(function (s, i) {
+      // Extra cards (beyond the first VISIBLE_SERVICES) start hidden and are
+      // revealed by the "Show all services" toggle. They skip the `reveal`
+      // class so they don't stay stuck at opacity:0 when unhidden.
+      var extra = i >= VISIBLE_SERVICES;
+      return '<article class="scard ' + (extra ? 'scard--extra' : 'reveal') + '">' +
         '<div class="scard__icon">' + s.icon + '</div>' +
         '<h4>' + s.title + '</h4>' +
         '<p>' + s.desc + '</p>' +
         '</article>';
     }).join('');
+
+    if (SERVICES.length > VISIBLE_SERVICES) {
+      var remaining = SERVICES.length - VISIBLE_SERVICES;
+      var moreWrap = document.createElement('div');
+      moreWrap.className = 'services__more reveal';
+      var moreBtn = document.createElement('button');
+      moreBtn.type = 'button';
+      moreBtn.className = 'btn btn--ghost services__more-btn';
+      moreBtn.setAttribute('aria-expanded', 'false');
+      function setLabel(open) {
+        moreBtn.innerHTML = open
+          ? 'Show fewer services <span class="services__more-ico">▴</span>'
+          : 'Show all services <small>(' + remaining + ' more)</small> <span class="services__more-ico">▾</span>';
+      }
+      setLabel(false);
+      moreWrap.appendChild(moreBtn);
+      grid.parentNode.insertBefore(moreWrap, grid.nextSibling);
+      moreBtn.addEventListener('click', function () {
+        var open = grid.classList.toggle('services__grid--expanded');
+        moreBtn.setAttribute('aria-expanded', String(open));
+        setLabel(open);
+        if (!open) {
+          var sec = document.getElementById('services');
+          if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
   }
 
   /* ---- Year ---- */

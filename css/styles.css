@@ -186,6 +186,14 @@ h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; line-height: 1.15; colo
 .scard h4 { font-size: 1.08rem; margin-bottom: 6px; }
 .scard p { font-size: .86rem; color: var(--muted); }
 
+/* Show-all-services toggle */
+.scard--extra { display: none; }
+.services__grid--expanded .scard--extra { display: block; animation: scardIn .45s var(--ease) both; }
+@keyframes scardIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.services__more { text-align: center; margin-top: 30px; }
+.services__more-btn small { font-weight: 500; opacity: .7; }
+.services__more-ico { display: inline-block; margin-left: 2px; }
+
 /* ===== Why ===== */
 .why { background: linear-gradient(150deg, var(--navy-deep), var(--navy) 55%, var(--navy-700)); color: #fff; position: relative; overflow: hidden; }
 .why::before { content: ""; position: absolute; width: 360px; height: 360px; background: var(--red); border-radius: 40px; opacity: .12; top: -100px; right: -80px; transform: rotate(20deg); }
