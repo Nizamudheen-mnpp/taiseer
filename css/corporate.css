@@ -282,6 +282,24 @@ h1,h2,h3,h4,p,blockquote { overflow-wrap: break-word; }
 .branch__info { display: grid; gap: 14px; align-content: center; }
 @media (max-width: 800px) { .branch__inner { grid-template-columns: 1fr; } }
 
+/* Branches page */
+.branches__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(20px,3vw,34px); }
+.bcard { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .35s var(--ease), box-shadow .35s; }
+.bcard:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.bcard__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--bg-tint); }
+.bcard__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s var(--ease); }
+.bcard:hover .bcard__media img { transform: scale(1.04); }
+.bcard__flag { position: absolute; top: 14px; left: 14px; font-family: var(--head); font-weight: 700; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; padding: 6px 13px; border-radius: 999px; background: var(--navy); color: #fff; box-shadow: var(--shadow-sm); }
+.bcard__flag--new { background: var(--teal-600); }
+.bcard__body { padding: clamp(20px,2.4vw,28px); display: grid; gap: 15px; align-content: start; }
+.bcard__name { font-size: 1.32rem; font-weight: 800; color: var(--navy); }
+.bcard__row { display: flex; gap: 13px; align-items: flex-start; font-size: .92rem; color: var(--muted); line-height: 1.55; }
+.bcard__row svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--teal-600); margin-top: 2px; }
+.bcard__row a { color: var(--navy); font-weight: 600; }
+.bcard__row em { color: var(--teal-600); font-style: normal; font-weight: 600; }
+.bcard__actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+@media (max-width: 760px) { .branches__grid { grid-template-columns: 1fr; } }
+
 /* FAQ */
 .faq__inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px,4vw,54px); align-items: start; }
 .faq__head { position: sticky; top: 100px; }
