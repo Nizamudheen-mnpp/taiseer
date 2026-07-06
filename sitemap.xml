@@ -3,12 +3,24 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://taiseertyping.com/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://taiseertyping.com/assets/shop.png</image:loc>
       <image:title>Taiseer Transactions Services — Typing &amp; Documentation Center, Abu Dhabi</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://taiseertyping.com/services.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taiseertyping.com/branches.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

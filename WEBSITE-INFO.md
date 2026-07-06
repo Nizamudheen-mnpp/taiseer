@@ -81,16 +81,23 @@ Rubber Stamp · Civil Defense · Photocopy Services · Letter Drafting · Court 
 ---
 
 ## 🗂️ Project Files
+> Client selected the **corporate (teal / navy)** design. It is now the live site;
+> the other mockups are archived under `design-alternatives/`.
 ```
-index.html            Main site (classic navy/red theme)
-premium.html          Alternate design (violet / glass)
-corporate.html        Alternate design (teal / navy)
-css/styles.css        Styles for index.html
-css/premium.css       Styles for premium.html
-css/corporate.css     Styles for corporate.html
-js/script.js          Interactions (nav, forms, counters, FAQ)
+index.html            Live home page  (/)              — was corporate.html
+services.html         Live services page (/services)   — was corporate-services.html
+branches.html         Live branches page (/branches)   — was corporate-branches.html
+css/corporate.css     Styles for the live site
+js/corporate.js       Interactions (nav, forms, counters, FAQ)
 assets/logo.png       Company logo
 assets/shop.png       Storefront photo
+
+design-alternatives/  Archived, unused mockups (blocked in robots.txt)
+  index.html            Classic navy/red theme        (css/styles.css, js/script.js)
+  premium.html          Violet / glass theme          (css/premium.css, js/premium.js)
+  corporate-brand.html  Corporate + brand variant     (css/corporate-brand.css)
+  corporate-brand-services.html
+  corporate-brand-branches.html
 ```
 
 ---
@@ -102,5 +109,5 @@ assets/shop.png       Storefront photo
    **056 830 4981** as the alternate. Confirm which to keep, or add more.
 4. **Domain** — SEO tags assume `https://taiseertyping.com/`. Update if the final
    domain differs.
-5. **Which design to keep** — index (classic) / premium (violet) / corporate (teal).
-   Pick one and the others can be removed.
+5. ~~**Which design to keep**~~ — ✅ Resolved: client chose **corporate (teal)**,
+   now live at the domain root. Alternates archived in `design-alternatives/`.

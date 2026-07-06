@@ -3,6 +3,8 @@
 
 User-agent: *
 Allow: /
+# Archived alternate design mockups — not for indexing
+Disallow: /design-alternatives/
 
 # Explicitly welcome social-preview crawlers (WhatsApp, Facebook, Twitter/X, LinkedIn)
 User-agent: facebookexternalhit
